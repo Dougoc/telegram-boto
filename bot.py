@@ -7,7 +7,7 @@ from telegram.ext import Updater
 from telegram.ext import CommandHandler
 # encoding: utf-8
 
-updater = Updater(token='244002913:AAG_Omkgq7BJNOPWGIrXTd4fa9_SC7oiNvA')
+updater = Updater(token='xxx')
 
 dispatcher = updater.dispatcher
 
