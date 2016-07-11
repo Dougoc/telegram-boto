@@ -1,0 +1,11 @@
+# Dir da virtualenv
+venv
+
+# Python bytecode
+*.pyc
+
+# Python package info
+*.egg-info
+
+#Coverage
+.coverage
