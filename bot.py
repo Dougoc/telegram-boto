@@ -9,7 +9,7 @@ from lxml import html
 from telegram.ext import MessageHandler, Filters
 # encoding: utf-8
 
-updater = Updater(token='244002913:AAG_Omkgq7BJNOPWGIrXTd4fa9_SC7oiNvA')
+updater = Updater(token='xxx')
 
 dispatcher = updater.dispatcher
 
@@ -54,4 +54,3 @@ def desconhecido(bot, update):
 
 desconhecido_handler = MessageHandler([Filters.command], desconhecido)
 dispatcher.add_handler(desconhecido_handler)
-
