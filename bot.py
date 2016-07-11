@@ -2,6 +2,7 @@ import telegram
 import logging
 import subprocess
 import os
+import requests
 from telegram.ext import Updater
 from telegram.ext import CommandHandler
 # encoding: utf-8
@@ -33,7 +34,7 @@ def caps(bot, update, args):
 caps_handler = CommandHandler('caps', caps, pass_args=True)
 dispatcher.add_handler(caps_handler)
 
-def frase(bot, update,args):
+def frase(bot, update, args):
     subprocess.check_output('/bin/bash -c "$PEGA"', shell=True, env={'PEGA': 'lero.sh'})
     leia_frase = os.popen('cat /Users/dcosta/Documents/repo/EU/telegram-boto/frase.txt').read()
     bot.sendMessage(chat_id=update.message.chat_id, text=leia_frase)
@@ -46,3 +47,6 @@ def desconhecido(bot, update):
 
 desconhecido_handler = MessageHandler([Filters.command], desconhecido)
 dispatcher.add_handler(desconhecido_handler)
+
+
+requests
