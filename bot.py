@@ -9,7 +9,7 @@ from telegram.ext import CommandHandler
 from lxml import html
 from telegram.ext import MessageHandler, Filters
 
-updater = Updater(token='244002913:AAG_Omkgq7BJNOPWGIrXTd4fa9_SC7oiNvA')
+updater = Updater(token='CHAVE')
 
 dispatcher = updater.dispatcher
 
